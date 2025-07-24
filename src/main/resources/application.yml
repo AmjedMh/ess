@@ -14,7 +14,7 @@ app:
     delivery-start-confirmation: 3
     delivery-end-confirmation: 4
   station:
-    allowed-inactivity-duration: PT1H
+    allowed-inactivity-duration: PT2H
   encoding:
     charset: UTF-8
     enabled: true
