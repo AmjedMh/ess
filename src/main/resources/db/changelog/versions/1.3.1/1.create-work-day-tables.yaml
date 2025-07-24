@@ -1,0 +1,6 @@
+databaseChangeLog:
+  - include:
+      file: classpath:db/changelog/schema/create_work_day_tables.sql
+
+
+

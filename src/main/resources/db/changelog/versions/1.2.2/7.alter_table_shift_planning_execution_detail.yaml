@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Amjed
+      changes:
+        - addColumn:
+            tableName: shift_planning_execution_detail
+            columns:
+              - column:
+                  name: forced
+                  type: bool
+                  defaultOnNull: false
+                  defaultValueBoolean: false

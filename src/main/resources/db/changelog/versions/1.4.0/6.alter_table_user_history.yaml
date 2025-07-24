@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: Amjed
+      changes:
+        - update:
+            tableName: user_history
+            where: "impersonation_mode IS NULL"
+            columns:
+              - column:
+                  name: impersonation_mode
+                  valueBoolean: false

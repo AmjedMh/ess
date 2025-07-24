@@ -1,0 +1,1365 @@
+{
+    "Protocol": "jsonPTS",
+    "PtsId": "003700203337510F35343338",
+    "Packets": [
+        {
+            "Id": 982,
+            "Type": "UploadConfiguration",
+            "ConfigurationId": "c9cf2490",
+            "Configuration": [
+                {
+                    "Type": "PtsNetworkSettings",
+                    "Data": {
+                        "IpAddress": [
+                            192,
+                            168,
+                            1,
+                            104
+                        ],
+                        "NetMask": [
+                            255,
+                            255,
+                            255,
+                            0
+                        ],
+                        "Gateway": [
+                            192,
+                            168,
+                            1,
+                            1
+                        ],
+                        "HttpPort": 80,
+                        "HttpsPort": 443,
+                        "Dns1": [
+                            8,
+                            8,
+                            8,
+                            8
+                        ],
+                        "Dns2": [
+                            8,
+                            8,
+                            4,
+                            4
+                        ]
+                    }
+                },
+                {
+                    "Type": "RemoteServerConfiguration",
+                    "Data": {
+                        "IpAddress": [
+                            54,
+                            37,
+                            70,
+                            164
+                        ],
+                        "DomainName": "",
+                        "Port": 8083,
+                        "UserId": 2,
+                        "UseDeviceIdentifierAsLogin": false,
+                        "ServerResponseTimeoutSeconds": 2,
+                        "UploadPumpTransactions": true,
+                        "UploadPumpTransactionsUri": "api/upload/pumpTransaction",
+                        "UploadTankMeasurements": true,
+                        "UploadTankMeasurementsUri": "api/upload/tankMeasurement",
+                        "UploadInTankDeliveries": true,
+                        "UploadInTankDeliveriesUri": "api/upload/inTankDelivrey",
+                        "UploadGpsRecords": false,
+                        "UploadGpsRecordsUri": "",
+                        "UploadAlertRecords": true,
+                        "UploadAlertRecordsUri": "api/upload/alertRecord",
+                        "UploadConfiguration": true,
+                        "UploadConfigurationUri": "api/upload/config",
+                        "UploadStatus": true,
+                        "UploadStatusUri": "api/upload/status",
+                        "UploadStatusRequestsPeriodSeconds": 1,
+                        "IsUploadSuccessful": true,
+                        "UseWebsocketsCommunication": false,
+                        "WebsocketsUri": "",
+                        "WebsocketsPort": 0,
+                        "WebsocketsUploadPumpTransactions": false,
+                        "WebsocketsUploadTankMeasurements": false,
+                        "WebsocketsUploadInTankDeliveries": false,
+                        "WebsocketsUploadGpsRecords": false,
+                        "WebsocketsUploadAlertRecords": false,
+                        "WebsocketsUploadConfiguration": false,
+                        "WebsocketsUploadStatus": false,
+                        "WebsocketsUploadStatusRequestsPeriodSeconds": 1,
+                        "IsWebsocketsCommunicationSuccessful": false
+                    }
+                },
+                {
+                    "Type": "PumpsConfiguration",
+                    "Data": {
+                        "Ports": [
+                            {
+                                "Id": 1,
+                                "Protocol": 62,
+                                "BaudRate": 4
+                            }
+                        ],
+                        "Pumps": [
+                            {
+                                "Id": 1,
+                                "Port": 1,
+                                "Address": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Port": 1,
+                                "Address": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Type": "ProbesConfiguration",
+                    "Data": {
+                        "Ports": [],
+                        "Probes": []
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 1,
+                        "Value": "00000070"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 2,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 3,
+                        "Value": "00000114"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 4,
+                        "Value": "00000114"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 5,
+                        "Value": "00000114"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 6,
+                        "Value": "14000220"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 7,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 8,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 9,
+                        "Value": "00000001"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 10,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 11,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 12,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 13,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 14,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 15,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 16,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 17,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 18,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 19,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 20,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 21,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 22,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 23,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 24,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 25,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 26,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 27,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 28,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 29,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 30,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "PTS",
+                        "Address": 31,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "FuelGradesConfiguration",
+                    "Data": {
+                        "FuelGrades": [
+                            {
+                                "Id": 1,
+                                "Name": "Super 91",
+                                "Price": 850,
+                                "ExpansionCoefficient": 0.00000,
+                                "BlendTank1Id": 0,
+                                "BlendTank2Id": 0,
+                                "BlendTank1Percentage": 0
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Gasoil",
+                                "Price": 675,
+                                "ExpansionCoefficient": 0.00000,
+                                "BlendTank1Id": 0,
+                                "BlendTank2Id": 0,
+                                "BlendTank1Percentage": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Type": "TanksConfiguration",
+                    "Data": {
+                        "Tanks": []
+                    }
+                },
+                {
+                    "Type": "PumpNozzlesConfiguration",
+                    "Data": {
+                        "PumpNozzles": [
+                            {
+                                "PumpId": 1,
+                                "FuelGradeIds": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            {
+                                "PumpId": 2,
+                                "FuelGradeIds": [
+                                    2,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Type": "PriceBoardsConfiguration",
+                    "Data": {
+                        "Ports": [],
+                        "PriceBoards": []
+                    }
+                },
+                {
+                    "Type": "ReadersConfiguration",
+                    "Data": {
+                        "Ports": [
+                            {
+                                "Id": "DISP",
+                                "Protocol": 1,
+                                "BaudRate": 4
+                            }
+                        ],
+                        "Readers": [
+                            {
+                                "Id": 1,
+                                "Port": "DISP",
+                                "Address": 9,
+                                "PumpId": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Type": "TagsList",
+                    "Data": [
+                        {
+                            "Tag": "6A002F3382",
+                            "Name": "Test tag",
+                            "Valid": true
+                        },
+                        {
+                            "Tag": "01001C3804",
+                            "Name": "test tag black",
+                            "Valid": true
+                        }
+                    ]
+                },
+                {
+                    "Type": "DateTime",
+                    "Data": {
+                        "DateTime": "2023-11-24T16:36:31",
+                        "AutoSynchronize": false,
+                        "UTCOffset": 0
+                    }
+                },
+                {
+                    "Type": "DailyProcessingTime",
+                    "Data": {
+                        "Time": "00:00",
+                        "BackupConfiguration": false
+                    }
+                },
+                {
+                    "Type": "WirelessDevicesConfiguration",
+                    "Data": {
+                        "Ports": [
+                            {
+                                "Id": "1",
+                                "WirelessCommunication": true
+                            },
+                            {
+                                "Id": "DISP",
+                                "WirelessCommunication": true
+                            }
+                        ],
+                        "Devices": [
+                            {
+                                "Id": 1,
+                                "Type": "Pump",
+                                "PortId": "1",
+                                "IpAddress": "192.168.1.100",
+                                "Port": 3333
+                            },
+                            {
+                                "Id": 2,
+                                "Type": "Pump",
+                                "PortId": "1",
+                                "IpAddress": "192.168.1.100",
+                                "Port": 3333
+                            },
+                            {
+                                "Id": 1,
+                                "Type": "Reader",
+                                "PortId": "DISP",
+                                "IpAddress": "192.168.1.100",
+                                "Port": 3333
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 1,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 2,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 3,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 4,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 5,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 6,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 7,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 8,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 9,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 10,
+                        "Value": "0089602D"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 11,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 12,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 13,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 14,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 15,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 16,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 17,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 18,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 19,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 20,
+                        "Value": "00000001"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 21,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 22,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 23,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 24,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 25,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 26,
+                        "Value": "00000002"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 27,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 28,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 29,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 30,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 1,
+                        "Address": 31,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 1,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 2,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 3,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 4,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 5,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 6,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 7,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 8,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 9,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 10,
+                        "Value": "00896069"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 11,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 12,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 13,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 14,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 15,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 16,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 17,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 18,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 19,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 20,
+                        "Value": "80000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 21,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 22,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 23,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 24,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 25,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 26,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 27,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 28,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 29,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 30,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Pump",
+                        "Number": 2,
+                        "Address": 31,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 1,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 2,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 3,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 4,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 5,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 6,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 7,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 8,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 9,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 10,
+                        "Value": "0089602D"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 11,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 12,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 13,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 14,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 15,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 16,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 17,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 18,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 19,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 20,
+                        "Value": "00000001"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 21,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 22,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 23,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 24,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 25,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 26,
+                        "Value": "00000002"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 27,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 28,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 29,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 30,
+                        "Value": "00000000"
+                    }
+                },
+                {
+                    "Type": "Parameter",
+                    "Data": {
+                        "Device": "Reader",
+                        "Number": 1,
+                        "Address": 31,
+                        "Value": "00000000"
+                    }
+                }
+            ]
+        }
+    ]
+}

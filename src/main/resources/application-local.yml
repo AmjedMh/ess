@@ -1,0 +1,68 @@
+ess:
+  mode: dev
+  transaction:
+    numTransactions: 10
+    quantity:
+      min: 1
+      max: 20
+    dateRangeDays: 30
+    tag: "6A002F4101,6A00613B9C,6A00613B9Q,6A002F4102,6A00613B9D,6A002F4103,6A00613B9X,6A002F4104"
+server:
+  port: 8083
+  https:
+    port: 8445
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ess
+    username: postgres
+    password: admin
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/MFA_REALM
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+      client:
+        registration:
+          oauth2-client-credentials:
+            client-id: ess
+            client-secret: 8tXbaWjKZYLuXwnaaYi3OM4V3h2o8pGT
+            scope: openid, profile, roles
+            authorization-grant-type: password
+        provider:
+          keycloak:
+            realm: MFA_REALM
+            issuer-uri: http://localhost:8080/realms/MFA_REALM
+            tokenEndpoint: http://localhost:8080/realms/MFA_REALM/protocol/openid-connect/token
+            serverUrl: http://localhost:8080/
+            username: amjedMh
+            password: Amjed@2024
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    protocol: smtp
+    username: amjedmh111@gmail.com
+    password: whxxfvazydmrptcq
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+        debug: true
+logging:
+  level:
+    com.teknokote: DEBUG
+    org.apache: DEBUG
+    org.apache.tomcat.util.net.NioEndpoint: ERROR
+    org.springframework.security.web: DEBUG
+    org.springframework.mail: DEBUG
+
+photo:
+  storage:
+    path:  C:\\Users\\amjed\\Downloads\\Documents
+cm:
+  client:
+    url: http://localhost:8084/api

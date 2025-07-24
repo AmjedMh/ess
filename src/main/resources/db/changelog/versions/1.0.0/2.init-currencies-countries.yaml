@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      id: 4
+      file: classpath:db/changelog/schema/currencies-countries.sql

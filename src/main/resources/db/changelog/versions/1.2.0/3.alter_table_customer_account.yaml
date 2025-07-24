@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 6
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: customer_account
+            columns:
+              - column:
+                  name: creator_account_id
+                  type: int8
+              - column:
+                  name: creator_user_id
+                  type: int8
+              - column:
+                  name: parent_id
+                  type: int8
+              - column:
+                  name: resale_right
+                  type: boolean
+                  defaultValueBoolean: false

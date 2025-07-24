@@ -1,0 +1,151 @@
+#  Template maven-build
+
+#  This template allows you to test and build your Java project with Maven.
+#  The workflow allows running tests, code checkstyle and security scans on the default branch.
+
+# Prerequisites: pom.xml and appropriate project structure should exist in the repository.
+
+image: maven:3.9.0
+
+definitions:
+  services:
+    custom-docker:
+      image:
+        name: docker.teknoword.com/dind
+        username: $REPOSITORY_USERNAME
+        password: $REPOSITORY_PASSWORD
+      type: docker
+      variables:
+        INSECURE_REGISTRY: 192.168.1.65:8082
+  steps:
+    - step: &build-and-test
+        name: Build and Test
+        runs-on:
+          - self.hosted
+          - linux
+        caches:
+          - maven
+        script:
+          - mvn -s ./deployments/settings.xml -B verify --file pom.xml
+        artifacts:
+          - target/*.jar
+          - target/site/**
+          - target/classes/**
+        after-script:
+          # Collect checkstyle results, if any, and convert to Bitbucket Code Insights.
+          - pipe: atlassian/checkstyle-report:0.3.0
+
+    - step: &quality
+        name: Quality
+        runs-on:
+          - self.hosted
+          - linux
+        caches:
+          - maven
+        script:
+          - mvn -s ./deployments/settings.xml -B sonar:sonar -Dsonar.projectKey=jess --file pom.xml
+          #- mvn -s ./deployments/settings.xml -B sonar:sonar -Dsonar.projectKey=jess -Dsonar.qualitygate.wait=true --file pom.xml
+
+    - step: &security-scan
+        name: Security Scan
+        runs-on:
+         - self.hosted
+         - linux
+        script:
+        # Run a security scan for sensitive data.
+        # See more security tools at https://bitbucket.org/product/features/pipelines/integrations?&category=security
+         - pipe: atlassian/git-secrets-scan:0.5.1
+
+    - step: &deploy-to-nexus
+        name: Deploy Artifact to Nexus Repository Manager
+        runs-on:
+          - self.hosted
+          - linux
+        caches:
+          - maven
+        script:
+          - mvn -B -s ./deployments/settings.xml -Dmaven.test.skip=true deploy -DaltDeploymentRepository=nexus-snapshots::${NEXUS_SERVER_URL}/repository/maven-snapshots
+
+    - step: &build-docker-image
+        name: Build & Push Docker Image
+        runs-on:
+          - self.hosted
+          - linux
+        services:
+          - custom-docker
+        script:
+          - export DOCKER_BUILDKIT=0
+          - docker login -u ${REPOSITORY_USERNAME} -p ${REPOSITORY_PASSWORD} ${DOCKER_REGISTRY_URL}
+          - docker build -f ./deployments/Dockerfile -t ${DOCKER_REGISTRY_URL}/${PROJECT_NAME}:${BITBUCKET_BRANCH-${BITBUCKET_TAG}} .
+          - docker push ${DOCKER_REGISTRY_URL}/${PROJECT_NAME}:${BITBUCKET_BRANCH-${BITBUCKET_TAG}}
+
+    - step: &deploy-container
+        name: Deploy to Dev
+        image: atlassian/default-image:4
+        trigger: manual
+        runs-on:
+          - self.hosted
+          - linux
+        artifacts:
+          download: false
+        script:
+          - export IMAGE_TAG=${BITBUCKET_BRANCH-${BITBUCKET_TAG}}
+          - envsubst < ./deployments/deploy-container.sh > deploy.sh
+          - pipe: atlassian/ssh-run:0.8.0
+            variables:
+              SERVER: ${HOST_URL}
+              SSH_USER: ${SSH_USER}
+              MODE: 'script'
+              COMMAND: 'deploy.sh'
+
+
+pipelines:
+  branches:
+    develop:
+      - step: *build-and-test
+      - step: *quality
+      - step: *deploy-to-nexus
+      - step: *build-docker-image
+      - step:
+          <<: *deploy-container
+          name: Deploy to Recette
+          deployment: recette
+    '*':
+      - step: *build-and-test
+      - step: *quality
+  tags:
+    '*':
+      - step:
+          name: Deploy Release Artifact to Nexus Repository Manager
+          runs-on:
+            - self.hosted
+            - linux
+          caches:
+            - maven
+          artifacts:
+            download: false
+            paths:
+              - target/*.jar
+          script:
+            - mvn -s ./deployments/settings.xml versions:set -DnewVersion=${BITBUCKET_TAG}
+            - mvn -B -s ./deployments/settings.xml -Dmaven.test.skip=true install deploy -DaltDeploymentRepository=nexus-releases::${NEXUS_SERVER_URL}/repository/maven-releases
+      - step: *build-docker-image
+      - step:
+          <<: *deploy-container
+          name: Deploy to Prod
+          deployment: prod
+  custom:
+    deploy-to-formation:
+      - step: *build-and-test
+      - step: *build-docker-image
+      - step:
+          <<: *deploy-container
+          name: Deploy to formation
+          deployment: formation
+    deploy-to-preprod:
+      - step: *build-and-test
+      - step: *build-docker-image
+      - step:
+          <<: *deploy-container
+          name: Deploy to pre-prod
+          deployment: preprod

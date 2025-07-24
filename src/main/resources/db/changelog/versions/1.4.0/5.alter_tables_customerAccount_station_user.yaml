@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Amjed
+      changes:
+        - addColumn:
+            tableName: customer_account
+            columns:
+              - column:
+                  name: identifier
+                  type: varchar(50) null
+        - addColumn:
+            tableName: station
+            columns:
+              - column:
+                  name: identifier
+                  type: varchar(50) null
+        - addColumn:
+            tableName: ess_user
+            columns:
+              - column:
+                  name: user_identifier
+                  type: varchar(50) null

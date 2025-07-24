@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 23
+      author: Hichem
+      changes:
+        - dropColumn:
+            tableName: pump_attendant_collection_sheet
+            columns:
+              - column:
+                    name: payment_mean_id
+              - column:
+                    name: amount
+  - changeSet:
+      id: 24
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: pump_attendant_collection_sheet
+            columns:
+              - column:
+                  name: inconsistency_motif
+                  type: varchar(255)
+                  constraints:
+                    nullable: true

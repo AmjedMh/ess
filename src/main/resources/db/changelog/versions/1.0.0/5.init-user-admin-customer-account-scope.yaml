@@ -1,0 +1,39 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: "hichem"
+      changes:
+        - insert:
+            tableName: "user_scope"
+            columns:
+              - column:
+                  name: "id"
+                  valueSequenceNext: "user_scope_seq"
+              - column:
+                  name: "scope"
+                  value: "CUSTOMER_ACCOUNT"
+              - column:
+                  name: "related_user_id"
+                  value: 1
+              - column:
+                  name: "version"
+                  value: 0
+        - insert:
+            tableName: "user_scope_functions"
+            columns:
+              - column:
+                  name: "user_scope_id"
+                  valueSequenceCurrent: "user_scope_seq"
+              - column:
+                  name: "function_id"
+                  value: 101
+        - insert:
+            tableName: "user_scope_functions"
+            columns:
+              - column:
+                  name: "user_scope_id"
+                  valueSequenceCurrent: "user_scope_seq"
+              - column:
+                  name: "function_id"
+                  value: 151
+

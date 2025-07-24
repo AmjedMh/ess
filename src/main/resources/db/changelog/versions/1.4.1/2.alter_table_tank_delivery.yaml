@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Amani
+      changes:
+        - addColumn:
+            tableName: tank_delivery
+            columns:
+              - column:
+                  name: status
+                  type: varchar(52)

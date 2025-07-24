@@ -1,0 +1,60 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: "hichem"
+      changes:
+        - insert:
+            tableName: "ess_user"
+            columns:
+              - column:
+                  name: "id"
+                  valueSequenceNext: "ess_user_seq"
+              - column:
+                  name: "username"
+                  value: "essadmin"
+              - column:
+                  name: "user_type"
+                  value: "APPLICATION"
+              - column:
+                  name: "date_status_change"
+                  value: "2023-11-12"
+              - column:
+                  name: "actif"
+                  valueBoolean: "true"
+              - column:
+                  name: "version"
+                  value: 0
+        - insert:
+            tableName: "user_scope"
+            columns:
+              - column:
+                  name: "id"
+                  valueSequenceNext: "user_scope_seq"
+              - column:
+                  name: "scope"
+                  value: "GLOBAL"
+              - column:
+                  name: "related_user_id"
+                  valueSequenceCurrent: "ess_user_seq"
+              - column:
+                  name: "version"
+                  value: 0
+        - insert:
+            tableName: "user_scope_functions"
+            columns:
+              - column:
+                  name: "user_scope_id"
+                  valueSequenceCurrent: "user_scope_seq"
+              - column:
+                  name: "function_id"
+                  value: 1
+        - insert:
+            tableName: "user_scope_functions"
+            columns:
+              - column:
+                  name: "user_scope_id"
+                  valueSequenceCurrent: "user_scope_seq"
+              - column:
+                  name: "function_id"
+                  value: 51
+

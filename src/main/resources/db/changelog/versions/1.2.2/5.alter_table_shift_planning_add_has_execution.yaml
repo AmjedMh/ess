@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: shift_planning
+            columns:
+              - column:
+                  name: has_execution
+                  type: bool

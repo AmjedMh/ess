@@ -1,0 +1,61 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20
+      author: "hichem"
+      changes:
+        - insert:
+            tableName: "customer_account"
+            columns:
+              - column:
+                  name: "id"
+                  valueSequenceNext: "customer_account_seq"
+              - column:
+                  name: "name"
+                  value: "Root CA"
+              - column:
+                  name: "description"
+                  value: "Root customer account"
+              - column:
+                  name: "master_user_id"
+                  value: 1
+              - column:
+                  name: "creator_user_id"
+                  value: 1
+              - column:
+                  name: "status"
+                  value: "ENABLED"
+              - column:
+                  name: "date_status_change"
+                  value: "2023-12-26"
+              - column:
+                  name: "created_date"
+                  value: "now()"
+              - column:
+                  name: "actif"
+                  valueBoolean: "true"
+              - column:
+                  name: "resale_right"
+                  valueBoolean: "true"
+              - column:
+                  name: "version"
+                  value: 0
+        - update:
+            tableName: "ess_user"
+            columns:
+              - column:
+                  name: "customer_account_id"
+                  valueSequenceCurrent: "customer_account_seq"
+              - column:
+                  name: "last_connection_date"
+                  value: "now()"
+            where: "username='essadmin'"
+        - update:
+            tableName: "customer_account"
+            columns:
+              - column:
+                  name: "parent_id"
+                  valueSequenceCurrent: "customer_account_seq"
+              - column:
+                  name: "creator_account_id"
+                  valueSequenceCurrent: "customer_account_seq"
+            where: "id != currval('customer_account_seq')"

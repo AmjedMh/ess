@@ -1,0 +1,19 @@
+{
+  "Protocol":"jsonPTS",
+  "Packets":[{
+    "Id":1,
+    "Type":"UploadedRecordsInformation",
+    "Data":{
+      "PumpTransactionsUploaded":10,
+      "PumpTransactionsTotal":15,
+      "TankMeasurementsUploaded":712,
+      "TankMeasurementsTotal":712,
+      "InTankDeliveriesUploaded":112,
+      "InTankDeliveriesTotal":112,
+      "GpsRecordsUploaded":130,
+      "GpsRecordsTotal":130,
+      "AlertRecordsUploaded":130,
+      "AlertRecordsTotal":130
+    }
+  }]
+}

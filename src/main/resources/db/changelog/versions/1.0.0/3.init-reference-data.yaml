@@ -1,0 +1,95 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: "hichem"
+      changes:
+        - insert:
+            tableName: "function"
+            columns:
+              - column:
+                  name: "id"
+                  valueSequenceNext: "function_seq"
+              - column:
+                  name: "scope"
+                  value: "GLOBAL"
+              - column:
+                  name: "code"
+                  value: "MANAGE_USERS"
+              - column:
+                  name: "description"
+                  value: "Gestion des utilisateurs globaux"
+              - column:
+                  name: "version"
+                  value: 0
+        - insert:
+            tableName: "function"
+            columns:
+              - column:
+                  name: "id"
+                  valueSequenceNext: "function_seq"
+              - column:
+                  name: "scope"
+                  value: "GLOBAL"
+              - column:
+                  name: "code"
+                  value: "MANAGE_CUSTOMER_ACCOUNTS"
+              - column:
+                  name: "description"
+                  value: "Gestion des comptes clients"
+              - column:
+                  name: "version"
+                  value: 0
+        - insert:
+            tableName: "function"
+            columns:
+              - column:
+                  name: "id"
+                  valueSequenceNext: "function_seq"
+              - column:
+                  name: "scope"
+                  value: "CUSTOMER_ACCOUNT"
+              - column:
+                  name: "code"
+                  value: "MANAGE_ATTACHED_USERS"
+              - column:
+                  name: "description"
+                  value: "Gestion des utilisateurs attachés aux comptes clients"
+              - column:
+                  name: "version"
+                  value: 0
+        - insert:
+            tableName: "function"
+            columns:
+              - column:
+                  name: "id"
+                  valueSequenceNext: "function_seq"
+              - column:
+                  name: "scope"
+                  value: "CUSTOMER_ACCOUNT"
+              - column:
+                  name: "code"
+                  value: "MANAGE_STATIONS"
+              - column:
+                  name: "description"
+                  value: "Gestion des stations attachés aux comptes clients"
+              - column:
+                  name: "version"
+                  value: 0
+        - insert:
+            tableName: "function"
+            columns:
+              - column:
+                  name: "id"
+                  valueSequenceNext: "function_seq"
+              - column:
+                  name: "scope"
+                  value: "STATION"
+              - column:
+                  name: "code"
+                  value: "SALES"
+              - column:
+                  name: "version"
+                  value: 0
+              - column:
+                  name: "description"
+                  value: "Consultations des ventes d'une station."

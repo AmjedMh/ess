@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 22
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: shift_planning_execution_detail
+            columns:
+              - column:
+                    name: index
+                    type: int4

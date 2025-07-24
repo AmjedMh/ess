@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: "hichem"
+      changes:
+        - insert:
+            tableName: "shift"
+            columns:
+              - column:
+                  name: "id"
+                  valueSequenceNext: "shift_seq"
+              - column:
+                  name: "name"
+                  value: "Off day"
+              - column:
+                  name: "starting_time"
+                  value: "now()"
+              - column:
+                  name: "ending_time"
+                  value: "now()"
+              - column:
+                  name: "off_day"
+                  value: "true"
+              - column:
+                  name: "created_date"
+                  value: "now()"
+              - column:
+                  name: "index"
+                  value: 0
+              - column:
+                  name: "version"
+                  value: 0

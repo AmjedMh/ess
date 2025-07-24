@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: controller_pts
+            columns:
+              - column:
+                  name: phone
+                  type: varchar(255)
+              - column:
+                  name: controller_type
+                  type: varchar(255)

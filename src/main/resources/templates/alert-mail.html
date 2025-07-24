@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f2f2f2; padding: 20px;">
+<div class="container" style="background-color: #fff; border-radius: 5px; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+    <img src="https://cdn.pixabay.com/photo/2016/09/05/15/42/warning-1646872_1280.png" alt="Image d'alerte" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" width="200">
+    <h1 style="color: #333; font-size: 24px;">Cher [[${station.getName()}]]</h1>
+    <div class="alert-message" style="background-color: #ffc107; color: #333; padding: 10px; border-radius: 5px;">
+        <p style="color: #555; font-size: 16px; line-height: 1.5;"><strong>Alerte : [[${alert.getAlertDescription()}]]</strong></p>
+    </div>
+    <p>Nous vous informons qu'un problème a été détecté avec le Controleur :</p>
+    <p style="color: #555; font-size: 16px; line-height: 1.5;"><strong>Alerte : [[${alert.getAlertDescription()}]]</strong></p>
+    <p style="color: #555; font-size: 16px; line-height: 1.5;"><strong>PtsId : [[${alert.getControllerPts().getPtsId()}]]</strong></p>
+    <p style="color: #555; font-size: 16px; line-height: 1.5;"><strong>Type d'appareil : [[${alert.getDeviceType()}]]</strong></p>
+    <p style="color: #555; font-size: 16px; line-height: 1.5;"><strong>Station : [[${alert.getControllerPts().getStation().getName()}]]</strong></p>
+    <p>Pour plus de détails, veuillez cliquer <a href="https://web.stationnex.com">ici</a>.</p>
+</div>
+</body>
+</html>

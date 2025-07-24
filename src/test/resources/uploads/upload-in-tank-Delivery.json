@@ -1,0 +1,33 @@
+{
+  "Protocol":"jsonPTS",
+  "PtsId":"0027003A3438510935383135",
+  "Packets":[{
+    "Id":124,
+    "Type":"UploadInTankDelivery",
+    "Data":{
+      "Tank":1,
+      "StartValues": {
+        "DateTime": "2019-03-09T15:30:25",
+        "ProductHeight": 2534.1,
+        "WaterHeight": 123.1,
+        "Temperature": 21.3,
+        "ProductVolume": 2005,
+        "ProductTCVolume": 2015
+      },
+      "EndValues": {
+        "DateTime": "2019-03-09T15:32:15",
+        "ProductHeight": 2725.1,
+        "WaterHeight": 130.4,
+        "Temperature": 21.6,
+        "ProductVolume": 2514,
+        "ProductTCVolume": 2601
+      },
+      "AbsoluteValues": {
+        "ProductDensity": 758.9,
+        "ProductMass": 386.3,
+        "PumpsDispensedVolume": 25.3
+      },
+      "ConfigurationId":"9ede6ce0"
+    }
+  }]
+}

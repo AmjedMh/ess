@@ -1,0 +1,29 @@
+{
+  "Protocol": "jsonPTS",
+  "PtsId": "0027003A3438510935383135",
+  "Packets": [
+    {
+      "Id": 12154,
+      "Type":"UploadPumpTransaction",
+      "Data": {
+        "DateTime": "2023-09-07T08:48:40",
+        "Pump": 1,
+        "Nozzle": 1,
+        "FuelGradeId": 1,
+        "FuelGradeName": "Gasoil",
+        "Transaction": 10376,
+        "UserId": 1,
+        "Tank": 1,
+        "Volume": 11.0,
+        "Amount": 23100.0,
+        "Price": 2100.0,
+        "TotalVolume": 11.0,
+        "TotalAmount": 23100.0,
+        "DateTimeStart": "2023-09-07T08:48:27",
+        "TCVolume": 0.0,
+        "Tag": "",
+        "ConfigurationId": "699c8c2"
+      }
+    }
+  ]
+}

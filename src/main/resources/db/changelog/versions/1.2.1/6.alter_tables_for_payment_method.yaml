@@ -1,0 +1,27 @@
+databaseChangeLog:
+  - changeSet:
+      id: 25
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: pump_attendant_collection_sheet_detail
+            columns:
+              - column:
+                  name: payment_method_id
+                  type: int8
+        - addForeignKeyConstraint:
+            baseTableName: pump_attendant_collection_sheet_detail
+            baseColumnNames: payment_method_id
+            referencedTableName: payment_method
+            constraintName: fk_payment_method_id
+            referencedColumnNames: id
+        - addColumn:
+            tableName: pump_attendant_collection_sheet
+            columns:
+              - column:
+                  name: status
+                  type: varchar(60)
+              - column:
+                  name: total_amount
+                  type: numeric(38, 2)
+

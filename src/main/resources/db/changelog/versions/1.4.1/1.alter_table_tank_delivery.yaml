@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Amani
+      changes:
+        - addColumn:
+            tableName: tank_delivery
+            columns:
+              - column:
+                  name: start_product_volume
+                  type: float8
+                  defaultValue: 0
+              - column:
+                  name: end_product_volume
+                  type: float8
+                  defaultValue: 0
+              - column:
+                  name: start_product_height
+                  type: numeric(38, 2)
+                  defaultValue: 0
+              - column:
+                  name: end_product_height
+                  type: numeric(38, 2)
+                  defaultValue: 0
+              - column:
+                  name: start_date_time
+                  type: timestamp(6)
+              - column:
+                  name: end_date_time
+                  type: timestamp(6)
+              - column:
+                  name: duration
+                  type: varchar(255)

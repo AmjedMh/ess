@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: 7
+      author: Amjed
+      changes:
+        - addColumn:
+            tableName: customer_account
+            columns:
+              - column:
+                  name: city
+                  type: varchar(255)
+              - column:
+                  name: phone
+                  type: varchar(255)
+              - column:
+                  name: card_manager
+                  type: bool
+                  defaultValue: false

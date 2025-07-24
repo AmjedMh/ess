@@ -1,0 +1,129 @@
+server:
+  port: 8080
+  https:
+    port: 8445
+  servlet:
+    context-path: /api
+app:
+  logging:
+    uploads: true
+  measurement:
+    interval: PT20S
+  delivery:
+    volume-fluctuation: 5.0
+    delivery-start-confirmation: 3
+    delivery-end-confirmation: 4
+  station:
+    allowed-inactivity-duration: PT1H
+  encoding:
+    charset: UTF-8
+    enabled: true
+    force: true
+
+ess:
+  mode: dev
+  mailing:
+    enabled: false
+  firmware:
+    supported-version: 23-11-17T14:57:27,24-01-25T23:32:22,24-03-26T15:01:53,24-03-27T18:03:34,24-06-15T18:46:04,24-03-26T15:01:53,24-10-12T22:10:47,24-10-15T10:57:01,24-10-16T11:21:09,24-06-15T18:46:04,24-10-19T18:50:38,24-11-12T13:42:13,24-11-14T18:25:08,24-11-15T14:14:29,2024-11-15T14:14:29,25-01-06T23:59:14,2024-03-27T18:03:34
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:8400/ess
+    username: essrecette
+    password: essrecette
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/ess-realm
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+      client:
+        registration:
+          oauth2-client-credentials:
+            client-id: ess
+            client-secret: TFjbzrlEu9qJEKLpwSxY0WVLMgzLhKrh
+            scope: openid, profile, roles
+            authorization-grant-type: password
+        provider:
+          keycloak:
+            realm: ess-realm
+            issuer-uri: http://localhost:8080/realms/ess-realm
+            token_endpoint: http://localhost:8080/realms/ess-realm/protocol/openid-connect/token
+            serverUrl: http://localhost:8080/
+            username: essadmin
+            password: ess@dm1n
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: amjedmh111@gmail.com
+    password: whxxfvazydmrptcq
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  liquibase:
+    database-change-log-lock-table: database_change_lock
+    database-change-log-table: database_change_log
+    enabled: true
+
+jwt:
+  auth:
+    converter:
+      principle-attribute: preferred_username
+      resource-id: ess
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+
+pts:
+  client:
+    url: http://192.168.1.117
+cm:
+  client:
+    url: http://card-manager:8080/api
+
+logging:
+  level:
+    com.teknokote: DEBUG
+    org.apache: DEBUG
+    org.apache.tomcat.util.net.NioEndpoint: ERROR
+    org.springframework.security.web: DEBUG
+
+photo:
+  storage:
+    path:  /home/essrecette/ess/photos
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus, monitoring
+  endpoint:
+    prometheus:
+      enabled: true
+    metrics:
+      enabled: true
+    health:
+      show-details: always
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+sonar:
+  sources:
+    - src/main/java
+    - src/test/java

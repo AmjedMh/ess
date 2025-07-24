@@ -1,0 +1,6 @@
+databaseChangeLog:
+  - include:
+      file: classpath:db/changelog/schema/create_fuel_grade_price_change_request.sql
+
+
+

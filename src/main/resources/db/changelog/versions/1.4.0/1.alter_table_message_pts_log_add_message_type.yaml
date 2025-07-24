@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: message_pts_log
+            columns:
+              - column:
+                  name: message_type
+                  type: varchar(50) NULL
+

@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: 23
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: shift_planning_execution_detail
+            columns:
+              - column:
+                  name: start_index_amount
+                  type: decimal
+                  constraints:
+                    nullable: true
+              - column:
+                  name: end_index_amount
+                  type: decimal
+                  constraints:
+                    nullable: true

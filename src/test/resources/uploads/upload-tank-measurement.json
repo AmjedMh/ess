@@ -1,0 +1,28 @@
+{
+	"Protocol": "jsonPTS",
+	"PtsId": "0027003A3438510935383135",
+	"Packets": [
+		{
+			"Id": 60539,
+			"Type": "UploadTankMeasurement",
+			"Data": {
+				"DateTime": "2000-01-01T00:00:02",
+				"Tank": 3,
+				"FuelGradeId": 3,
+				"FuelGradeName": "Gasoil Sans Soufre",
+				"Status": "OK",
+				"Alarms": [],
+				"ProductHeight": 250.0,
+				"WaterHeight": 10.0,
+				"Temperature": 0.4,
+				"ProductVolume": 5000,
+				"WaterVolume": 100,
+				"ProductUllage": 2500,
+				"ProductTCVolume": 0,
+				"ProductDensity": 759.0,
+				"ProductMass": 3795.0,
+				"ConfigurationId": "cee98b60"
+			}
+		}
+	]
+}

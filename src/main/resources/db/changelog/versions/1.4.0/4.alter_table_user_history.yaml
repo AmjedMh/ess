@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Amjed
+      changes:
+        - addColumn:
+            tableName: user_history
+            columns:
+              - column:
+                  name: impersonation_mode
+                  type: bool
+              - column:
+                  name: impersonator_user_name
+                  type: varchar(255) null
+              - column:
+                  name: user_name
+                  type: varchar(255) null
+              - column:
+                  name: action
+                  type: varchar(255) null

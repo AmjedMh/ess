@@ -1,0 +1,22 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://keycloack:8080/realms/ess-realm
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+      client:
+        registration:
+          oauth2-client-credentials:
+            client-id: ess
+            client-secret: WvaglRGLxViy46Ar9EyQPouxEn9MgNHT
+            scope: openid, profile, roles
+            authorization-grant-type: password
+        provider:
+          keycloak:
+            realm: ess-realm
+            issuer-uri: http://keycloack:8080/realms/ess-realm
+            token_endpoint: http://keycloack:8080/realms/ess-realm/protocol/openid-connect/token
+            serverUrl: http://keycloack:8080/
+            username: essadmin
+            password: essadmin

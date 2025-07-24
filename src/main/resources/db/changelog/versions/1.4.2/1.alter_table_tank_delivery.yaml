@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: pump_transaction
+            columns:
+              - column:
+                  name: controller_pts_id
+                  type: int8
+        - addForeignKeyConstraint:
+            baseTableName: pump_transaction
+            baseColumnNames: controller_pts_id
+            referencedTableName: controller_pts
+            constraintName: fk_controller_pts_id
+            referencedColumnNames: id

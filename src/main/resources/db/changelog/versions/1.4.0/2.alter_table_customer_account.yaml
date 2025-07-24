@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Amjed
+      changes:
+        - addColumn:
+            tableName: customer_account
+            columns:
+              - column:
+                  name: exported
+                  type: bool
+                  defaultValue: false

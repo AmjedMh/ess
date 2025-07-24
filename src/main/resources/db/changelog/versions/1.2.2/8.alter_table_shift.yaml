@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Amjed
+      changes:
+        - addColumn:
+            tableName: shift
+            columns:
+              - column:
+                  name: crosses_day_boundary
+                  type: bool
+                  defaultOnNull: false
+                  defaultValueBoolean: false

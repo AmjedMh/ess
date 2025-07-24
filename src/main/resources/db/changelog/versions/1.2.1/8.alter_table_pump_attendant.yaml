@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: pump_attendant
+            columns:
+              - column:
+                  name: address
+                  type: varchar(255)

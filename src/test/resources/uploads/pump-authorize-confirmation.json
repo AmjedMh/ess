@@ -1,0 +1,11 @@
+{
+  "Protocol":"jsonPTS",
+  "Packets":[{
+    "Id":1,
+    "Type":"PumpAuthorizeConfirmation",
+    "Data":{
+      "Pump":1,
+      "Transaction":31
+    }
+  }]
+}

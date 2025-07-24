@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: 21
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: shift_planning_execution_detail
+            columns:
+              - column:
+                  name: start_date_time
+                  type: timestamp
+              - column:
+                  name: end_date_time
+                  type: timestamp
+        - dropColumn:
+            tableName: pump_attendant_collection_sheet
+            columns:
+              - column:
+                  name: shift_planning_execution_detail_id
+        - addColumn:
+            tableName: pump_attendant_collection_sheet
+            columns:
+              - column:
+                  name: shift_planning_execution_id
+                  type: int8
+        - addForeignKeyConstraint:
+            baseColumnNames: shift_planning_execution_id
+            baseTableName: pump_attendant_collection_sheet
+            baseTableSchemaName: public
+            constraintName: fk_shift_planning_execution_id
+            referencedColumnNames: id
+            referencedTableName: shift_planning_execution
+            referencedTableSchemaName: public
+            validate: true

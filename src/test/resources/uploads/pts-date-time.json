@@ -1,0 +1,12 @@
+{
+  "Protocol":"jsonPTS",
+  "Packets":[{
+    "Id":1,
+    "Type":"DateTime",
+    "Data":{
+      "DateTime":"2025-03-18T08:10:41",
+      "AutoSynchronize":true,
+      "UTCOffset":60
+    }
+  }]
+}

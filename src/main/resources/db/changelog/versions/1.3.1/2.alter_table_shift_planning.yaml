@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: Hichem
+      changes:
+        - dropColumn:
+            tableName: shift_planning
+            columns:
+              - column:
+                  name: day
+        - addColumn:
+            tableName: shift_planning
+            columns:
+              - column:
+                  name: work_day_shift_planning_id
+                  type: int8
+        - addForeignKeyConstraint:
+            baseColumnNames: work_day_shift_planning_id
+            baseTableName: shift_planning
+            baseTableSchemaName: public
+            constraintName: fk_work_day_shift_planning_id
+            referencedColumnNames: id
+            referencedTableName: work_day_shift_planning
+            referencedTableSchemaName: public
+            validate: true

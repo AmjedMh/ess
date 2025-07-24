@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Amani
+      changes:
+        - addColumn:
+            tableName: shift_rotation
+            columns:
+              - column:
+                  name: nbr_off_days
+                  type: int4
+              - column:
+                  name: planification_mode
+                  type: varchar(255)

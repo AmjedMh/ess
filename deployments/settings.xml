@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <mirrors>
+        <mirror>
+            <id>central</id>
+            <name>central</name>
+            <url>${NEXUS_SERVER_URL}/repository/maven-public/</url>
+            <mirrorOf>*</mirrorOf>
+        </mirror>
+    </mirrors>
+    <servers>
+        <server>
+            <id>central</id>
+            <username>${REPOSITORY_USERNAME}</username>
+            <password>${REPOSITORY_PASSWORD}</password>
+        </server>
+        <server>
+            <id>nexus-snapshots</id>
+            <username>${REPOSITORY_USERNAME}</username>
+            <password>${REPOSITORY_PASSWORD}</password>
+        </server>
+        <server>
+            <id>nexus-releases</id>
+            <username>${REPOSITORY_USERNAME}</username>
+            <password>${REPOSITORY_PASSWORD}</password>
+        </server>
+    </servers>
+
+</settings>

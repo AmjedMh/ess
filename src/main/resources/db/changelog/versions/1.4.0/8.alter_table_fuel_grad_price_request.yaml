@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: manel
+      changes:
+        - modifyDataType:
+            tableName: fuel_grade_price_change_request
+            columnName: old_price
+            newDataType: float8
+        - modifyDataType:
+            tableName: fuel_grade_price_change_request
+            columnName: new_price
+            newDataType: float8

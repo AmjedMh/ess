@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 8
+      author: Amjed
+      changes:
+        - addColumn:
+            tableName: station
+            columns:
+              - column:
+                  name: city
+                  type: varchar(255)

@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/ess
+    username: ess
+    password: ess1%
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://keycloak:8443/realms/ess-realm
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+      client:
+        registration:
+          oauth2-client-credentials:
+            client-id: ess
+            client-secret: 1gJy8AohCbRWUMoua4ekXB6zjZHGddPJ
+            scope: openid, profile, roles
+            authorization-grant-type: password
+        provider:
+          keycloak:
+            realm: ess-realm
+            issuer-uri: https://keycloak:8443/realms/ess-realm
+            token_endpoint: https://keycloak:8443/realms/ess-realm/protocol/openid-connect/token
+            serverUrl: https://keycloak:8443/
+            username: essadmin
+            password: ess@dm1n
+
+photo:
+  storage:
+    path: /home/ubuntu/ess/photos

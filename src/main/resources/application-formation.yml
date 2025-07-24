@@ -1,0 +1,32 @@
+ess:
+  mode: formation
+  transaction:
+    numTransactions: 10
+    quantity:
+      min: 1
+      max: 20
+    dateRangeDays: 30
+    tag: "6A002F4101,6A00613B9C,6A00613B9Q,6A002F4102,6A00613B9D,6A002F4103,6A00613B9X,6A002F4104"
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://keycloack:8080/realms/ess-realm
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+      client:
+        registration:
+          oauth2-client-credentials:
+            client-id: ess
+            client-secret: x8VFOcBjbqF65sXCrjXVVjQDPI7T7B41
+            scope: openid, profile, roles
+            authorization-grant-type: password
+        provider:
+          keycloak:
+            realm: ess-realm
+            issuer-uri: http://keycloack:8080/realms/ess-realm
+            token_endpoint: http://keycloack:8080/realms/ess-realm/protocol/openid-connect/token
+            serverUrl: http://keycloack:8080/
+            username: ali
+            password: ali

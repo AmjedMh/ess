@@ -1,0 +1,1293 @@
+{
+  "Protocol": "jsonPTS",
+  "PtsId": "003700203337510F35343338",
+  "Packets": [
+    {
+      "Id": 31809,
+      "Type": "UploadConfiguration",
+      "ConfigurationId": "3258eaef",
+      "Configuration": [
+        {
+          "Type": "PtsNetworkSettings",
+          "Data": {
+            "IpAddress": [
+              192,
+              168,
+              1,
+              104
+            ],
+            "NetMask": [
+              255,
+              255,
+              255,
+              0
+            ],
+            "Gateway": [
+              192,
+              168,
+              1,
+              1
+            ],
+            "Dns1": [
+              8,
+              8,
+              8,
+              8
+            ],
+            "Dns2": [
+              8,
+              8,
+              4,
+              4
+            ],
+            "HttpPort": 80,
+            "HttpsPort": 443,
+            "UsedProtocolType": "HTTPS",
+            "UsedAuthenticationType": "Digest"
+          }
+        },
+        {
+          "Type": "RemoteServerConfiguration",
+          "Data": {
+            "IpAddress": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "DomainName": "web.stationnex.com",
+            "Port": 0,
+            "UserId": 2,
+            "UseDeviceIdentifierAsLogin": false,
+            "ServerResponseTimeoutSeconds": 2,
+            "UploadPumpTransactions": false,
+            "UploadPumpTransactionsUri": "",
+            "UploadTankMeasurements": false,
+            "UploadTankMeasurementsUri": "",
+            "UploadInTankDeliveries": false,
+            "UploadInTankDeliveriesUri": "",
+            "UploadGpsRecords": false,
+            "UploadGpsRecordsUri": "",
+            "UploadAlertRecords": false,
+            "UploadAlertRecordsUri": "",
+            "UploadConfiguration": false,
+            "UploadConfigurationUri": "",
+            "UploadStatus": false,
+            "UploadStatusUri": "",
+            "UploadStatusRequestsPeriodSeconds": 1,
+            "IsUploadSuccessful": false,
+            "UseWebsocketsCommunication": true,
+            "WebsocketsUri": "api/websocket",
+            "WebsocketsPort": 8083,
+            "WebsocketsUploadPumpTransactions": true,
+            "WebsocketsUploadTankMeasurements": true,
+            "WebsocketsUploadInTankDeliveries": true,
+            "WebsocketsUploadGpsRecords": false,
+            "WebsocketsUploadAlertRecords": false,
+            "WebsocketsUploadConfiguration": true,
+            "WebsocketsUploadStatus": true,
+            "WebsocketsUploadStatusRequestsPeriodSeconds": 1,
+            "IsWebsocketsCommunicationSuccessful": true,
+            "IsConnectionSuccessful": true
+          }
+        },
+        {
+          "Type": "PumpsConfiguration",
+          "Data": {
+            "Ports": [
+              {
+                "Id": 1,
+                "Protocol": 42,
+                "BaudRate": 1
+              }
+            ],
+            "Pumps": [
+              {
+                "Id": 1,
+                "Port": 1,
+                "Address": 1
+              },
+              {
+                "Id": 2,
+                "Port": 1,
+                "Address": 2
+              },
+              {
+                "Id": 3,
+                "Port": 1,
+                "Address": 3
+              },
+              {
+                "Id": 4,
+                "Port": 1,
+                "Address": 4
+              }
+            ]
+          }
+        },
+        {
+          "Type": "ProbesConfiguration",
+          "Data": {
+            "Ports": [
+              {
+                "Id": "DISP",
+                "Protocol": 22,
+                "BaudRate": 4
+              }
+            ],
+            "Probes": [
+              {
+                "Id": 1,
+                "Port": "DISP",
+                "Address": 20133
+              },
+              {
+                "Id": 2,
+                "Port": "DISP",
+                "Address": 20134
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 1,
+            "Value": "00000070"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 2,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 3,
+            "Value": "10000114"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 4,
+            "Value": "00000114"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 5,
+            "Value": "00113114"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 6,
+            "Value": "14000220"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 7,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 8,
+            "Value": "00000002"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 9,
+            "Value": "00000001"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 10,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 11,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 12,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 13,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 14,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 15,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 16,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 17,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 18,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 19,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 20,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 21,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 22,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 23,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 24,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 25,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 26,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 27,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 28,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 29,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 30,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "PTS",
+            "Address": 31,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "FuelGradesConfiguration",
+          "Data": {
+            "FuelGrades": [
+              {
+                "Id": 1,
+                "Name": "Super 91",
+                "Price": 850,
+                "ExpansionCoefficient": 0.00000,
+                "BlendTank1Id": 0,
+                "BlendTank2Id": 0,
+                "BlendTank1Percentage": 0
+              },
+              {
+                "Id": 2,
+                "Name": "Gasoil",
+                "Price": 675,
+                "ExpansionCoefficient": 0.00000,
+                "BlendTank1Id": 0,
+                "BlendTank2Id": 0,
+                "BlendTank1Percentage": 0
+              }
+            ]
+          }
+        },
+        {
+          "Type": "TanksConfiguration",
+          "Data": {
+            "Tanks": [
+              {
+                "Id": 1,
+                "FuelGradeId": 1,
+                "Height": 1850,
+                "CriticalHighProductAlarmHeight": 0,
+                "HighProductAlarmHeight": 0,
+                "LowProductAlarmHeight": 0,
+                "CriticalLowProductAlarmHeight": 0,
+                "HighWaterAlarmHeight": 0,
+                "StopPumpsAtCriticalLowProductHeight": false,
+                "AutomaticCalibrationEnabled": false,
+                "AutomaticCalibrationReadyForGeneration": false
+              },
+              {
+                "Id": 2,
+                "FuelGradeId": 2,
+                "Height": 1500,
+                "CriticalHighProductAlarmHeight": 0,
+                "HighProductAlarmHeight": 0,
+                "LowProductAlarmHeight": 0,
+                "CriticalLowProductAlarmHeight": 0,
+                "HighWaterAlarmHeight": 0,
+                "StopPumpsAtCriticalLowProductHeight": false,
+                "AutomaticCalibrationEnabled": false,
+                "AutomaticCalibrationReadyForGeneration": false
+              }
+            ]
+          }
+        },
+        {
+          "Type": "PumpNozzlesConfiguration",
+          "Data": {
+            "PumpNozzles": [
+              {
+                "PumpId": 1,
+                "FuelGradeIds": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "TankIds": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "PumpId": 2,
+                "FuelGradeIds": [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "TankIds": [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "PumpId": 3,
+                "FuelGradeIds": [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "TankIds": [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "PumpId": 4,
+                "FuelGradeIds": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "TankIds": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "PriceBoardsConfiguration",
+          "Data": {
+            "Ports": [],
+            "PriceBoards": []
+          }
+        },
+        {
+          "Type": "ReadersConfiguration",
+          "Data": {
+            "Ports": [],
+            "Readers": []
+          }
+        },
+        {
+          "Type": "TagsList",
+          "Data": [
+            {
+              "Tag": "6A002F3382",
+              "Name": "tag rouge",
+              "Valid": true
+            },
+            {
+              "Tag": "01001C3804",
+              "Name": "test tag black",
+              "Valid": true
+            },
+            {
+              "Tag": "6A002F4101",
+              "Name": "tag bleu",
+              "Valid": true
+            }
+          ]
+        },
+        {
+          "Type": "DateTime",
+          "Data": {
+            "DateTime": "2024-11-12T21:42:35",
+            "AutoSynchronize": true,
+            "UTCOffset": 0
+          }
+        },
+        {
+          "Type": "DailyProcessingTime",
+          "Data": {
+            "Time": "00:00",
+            "ProcessFiles": false,
+            "BackupConfiguration": false,
+            "RegenerateTankAutoCalibrationCharts": false
+          }
+        },
+        {
+          "Type": "WirelessDevicesConfiguration",
+          "Data": {
+            "Ports": [
+              {
+                "Id": "1",
+                "WirelessCommunication": false
+              },
+              {
+                "Id": "DISP",
+                "WirelessCommunication": false
+              }
+            ],
+            "Devices": [
+              {
+                "Id": 1,
+                "Type": "Pump",
+                "PortId": "1",
+                "IpAddress": "0.0.0.0",
+                "Port": 0
+              },
+              {
+                "Id": 2,
+                "Type": "Pump",
+                "PortId": "1",
+                "IpAddress": "0.0.0.0",
+                "Port": 0
+              },
+              {
+                "Id": 3,
+                "Type": "Pump",
+                "PortId": "1",
+                "IpAddress": "0.0.0.0",
+                "Port": 0
+              },
+              {
+                "Id": 4,
+                "Type": "Pump",
+                "PortId": "1",
+                "IpAddress": "0.0.0.0",
+                "Port": 0
+              },
+              {
+                "Id": 1,
+                "Type": "Probe",
+                "PortId": "DISP",
+                "IpAddress": "0.0.0.0",
+                "Port": 0
+              },
+              {
+                "Id": 2,
+                "Type": "Probe",
+                "PortId": "DISP",
+                "IpAddress": "0.0.0.0",
+                "Port": 0
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Pump",
+            "Number": 1,
+            "Address": 1,
+            "Value": "00000001"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Pump",
+            "Number": 1,
+            "Address": 2,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Pump",
+            "Number": 1,
+            "Address": 3,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Pump",
+            "Number": 1,
+            "Address": 4,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Pump",
+            "Number": 4,
+            "Address": 27,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Pump",
+            "Number": 4,
+            "Address": 28,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Pump",
+            "Number": 4,
+            "Address": 29,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Pump",
+            "Number": 4,
+            "Address": 30,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Pump",
+            "Number": 4,
+            "Address": 31,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 1,
+            "Value": "00000001"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 2,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 3,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 4,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 5,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 6,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 7,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 8,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 9,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 10,
+            "Value": "00896023"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 11,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 12,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 13,
+            "Value": "00001427"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 14,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 15,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 16,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 17,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 18,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 19,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 20,
+            "Value": "00000001"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 21,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 22,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 23,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 24,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 25,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 26,
+            "Value": "00000002"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 27,
+            "Value": "00000002"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 28,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 29,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 30,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 1,
+            "Address": 31,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 1,
+            "Value": "00000002"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 2,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 3,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 4,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 5,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 6,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 7,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 8,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 9,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 10,
+            "Value": "00896023"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 11,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 12,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 13,
+            "Value": "0000143B"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 14,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 15,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 16,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 17,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 18,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 19,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 20,
+            "Value": "00000001"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 21,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 22,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 23,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 24,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 25,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 26,
+            "Value": "00000002"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 27,
+            "Value": "00000002"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 28,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 29,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 30,
+            "Value": "00000000"
+          }
+        },
+        {
+          "Type": "Parameter",
+          "Data": {
+            "Device": "Probe",
+            "Number": 2,
+            "Address": 31,
+            "Value": "00000000"
+          }
+        }
+      ]
+    }
+  ]
+}

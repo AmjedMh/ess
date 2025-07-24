@@ -1,0 +1,18 @@
+{
+  "Protocol": "jsonPTS",
+  "PtsId": "0027003A3438510935383135",
+  "Packets": [
+    {
+      "Id": 60276,
+      "Type": "UploadAlertRecord",
+      "Data": {
+        "DateTime": "2023-12-19T19:18:28",
+        "DeviceType": "Reader",
+        "DeviceNumber": 5,
+        "State": "Started",
+        "Code": 1,
+        "ConfigurationId": "65c50bb7"
+      }
+    }
+  ]
+}

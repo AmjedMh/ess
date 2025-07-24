@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: pump_attendant_team
+            columns:
+              - column:
+                  name: shift_rotation_id
+                  type: int8
+        - addForeignKeyConstraint:
+              baseTableName: pump_attendant_team
+              baseColumnNames: shift_rotation_id
+              referencedTableName: shift_rotation
+              constraintName: fk_pump_attendant_team_rotation_id
+              referencedColumnNames: id

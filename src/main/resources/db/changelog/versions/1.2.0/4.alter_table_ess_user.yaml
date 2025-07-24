@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: 7
+      author: Hichem
+      changes:
+        - addColumn:
+            tableName: ess_user
+            columns:
+              - column:
+                  name: change_password
+                  type: boolean
+                  defaultValueBoolean: true
+              - column:
+                  name: creator_account_id
+                  type: int8
+              - column:
+                  name: last_connection_date
+                  type: timestamp(6)
+              - column:
+                  name: matricule
+                  type: varchar(50)
+              - column:
+                  name: photo_path
+                  type: varchar(255)
+              - column:
+                  name: send_sms
+                  type: boolean
+                  defaultValueBoolean: false
+              - column:
+                  name: subnet_mask
+                  type: varchar(255)
+              - column:
+                  name: tag
+                  type: varchar(255)

@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 24
+      author: Hichem
+      changes:
+        - dropColumn:
+            tableName: pump_attendant_collection_sheet_detail
+            columnName: payment_mean_id
+        - dropTable:
+            tableName: payment_mean
+        - dropSequence:
+            sequenceName: payment_mean_seq
