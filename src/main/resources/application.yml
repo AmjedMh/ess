@@ -8,7 +8,7 @@ app:
   logging:
     uploads: true
   measurement:
-    interval: PT20S
+    interval: PT30S
   delivery:
     volume-fluctuation: 5.0
     delivery-start-confirmation: 3
